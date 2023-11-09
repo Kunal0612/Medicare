@@ -13,6 +13,7 @@ import ServiceList from '../components/services/ServiceList'
 import featureImg from '../assets/images/feature-img.png'
 import videoicon from '../assets/images/video-icon.png'
 import avatarIcon from '../assets/images/avatar-icon.png'
+import DoctorList from '../components/Doctors/DoctorList'
 const Home = () => {
   return <>
   {/* Hero Section */}
@@ -214,7 +215,15 @@ const Home = () => {
       </div>
     </div>
   </section>
-  
+  <section>
+    <div className="container">
+    <div className='xl:w-[470px] mx-auto'>
+        <h2 className='heading text-center'>Our Great Doctors</h2>
+        <p className='text_para text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam enim eos magnam pariatur fugit voluptate.</p>
+      </div>
+      <DoctorList/>
+    </div>
+  </section>
   </>
   </>
 }
